@@ -1,29 +1,27 @@
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "5.21.0"
+  version = "~> 5.0"
 
-  name = "VPC-skeleton"
-  cidr = "10.0.0.0/16"
+  name = var.vpc_name
+  cidr = var.vpc_cidr
 
-  azs             = ["eu-west-3a", "eu-west-3b", "eu-west-3c"]
-  private_subnets = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
-  public_subnets  = ["10.0.10.0/24", "10.0.11.0/24", "10.0.12.0/24"]
+  azs             = var.azs
+  public_subnets  = var.public_subnets
+  private_subnets = var.private_subnets
 
-  enable_dns_hostnames = true
-  enable_dns_support   = true
-
-  create_igw = false
-  enable_nat_gateway = false
+  enable_nat_gateway   = var.enable_nat
+  single_nat_gateway   = true
+  one_nat_gateway_per_az = false
 
   tags = {
-    Environment = "skeleton"
+    Project = "skeleton"
   }
 }
 
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "20.36.0"
-
+ 
   cluster_name    = "skeleton"
   cluster_version = "1.32"
 
@@ -33,6 +31,6 @@ module "eks" {
   eks_managed_node_groups = {} 
 
   tags = {
-    Environment = "skeleton"
+    Environment = "skeleton-env"
   }
 }
