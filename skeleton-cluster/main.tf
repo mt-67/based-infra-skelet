@@ -12,6 +12,7 @@ module "vpc" {
   enable_nat_gateway   = var.enable_nat
   single_nat_gateway   = true
   one_nat_gateway_per_az = false
+<<<<<<< HEAD
 
   tags = {
     Project = "skeleton"
@@ -32,5 +33,10 @@ module "eks" {
 
   tags = {
     Environment = "skeleton-env"
+=======
+
+  tags = {
+    Project = "skeleton"
+>>>>>>> 332e263bdae02348e1d7960b36ed408c75673cbf
   }
 }
