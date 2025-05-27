@@ -1,5 +1,5 @@
 # KatanaPay EKS Platform
-(https://www.mermaidchart.com/raw/77c7eb92-865c-4935-8173-cbf689a35d8f?theme=light&version=v0.1&format=svg)[diagram] - link to the graphical infrastructure diagram
+[https://www.mermaidchart.com/raw/77c7eb92-865c-4935-8173-cbf689a35d8f?theme=light&version=v0.1&format=svg](diagram) - link to the graphical infrastructure diagram
 ## Overview
 
 This infrastructure provides an isolated, production-grade foundation for running workloads securely on AWS using a private EKS cluster. The design isolates workloads at the networking level, keeps the control plane inaccessible from the internet, and prepares the system for further hardening and observability.
