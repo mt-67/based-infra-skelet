@@ -4,9 +4,9 @@
 
 # What I’d add if I had another day
 
-- IAM Roles и Policy
-- Network policies Zero-Trust
-- IRSA integration for least-privilege access from pods
+- IAM Roles и Policy (is important for the security of the resource from users) 
+- Network policies Zero-Trust (is important for the security of the infrastructure)
+- IRSA integration for least-privilege access from pods (so that the pods can access the api were under control and with the roles they were given)
 - CloudWatch logging and metrics 
 - Terraform module for Vault integration via KMS
 
