@@ -1,5 +1,5 @@
 # KatanaPay EKS Platform
-[diagram](https://www.mermaidchart.com/raw/77c7eb92-865c-4935-8173-cbf689a35d8f?theme=light&version=v0.1&format=svg)  link to the graphical infrastructure diagram
+[diagram](https://www.mermaidchart.com/raw/77c7eb92-865c-4935-8173-cbf689a35d8f?theme=light&version=v0.1&format=svg) – link to the graphical infrastructure diagram
 ## Overview
 
 This infrastructure provides an isolated, production-grade foundation for running workloads securely on AWS using a private EKS cluster. The design isolates workloads at the networking level, keeps the control plane inaccessible from the internet, and prepares the system for further hardening and observability.
@@ -12,7 +12,7 @@ Terraform validate for this infrastructure was successful (screenshot attached)
 ![telegram-cloud-photo-size-2-5307721993602333597-y](https://github.com/user-attachments/assets/3a536d70-bf44-4872-ae87-4e71b9666f46)
 
 The architecture.md file contains the configuration of the entire infrastructure graphical layout (attached screenshot of the infrastructure graphical layout and a link to view it without having to enter the credentials)
-[diagrame](https://www.mermaidchart.com/raw/77c7eb92-865c-4935-8173-cbf689a35d8f?theme=light&version=v0.1&format=svg) - link to the graphical infrastructure diagram
+[diagrame](https://www.mermaidchart.com/raw/77c7eb92-865c-4935-8173-cbf689a35d8f?theme=light&version=v0.1&format=svg) – link to the graphical infrastructure diagram
 ![telegram-cloud-photo-size-2-5307721993602333658-y](https://github.com/user-attachments/assets/50f03fea-dd88-424b-a225-2bafa7fb4409)
 
 ---
