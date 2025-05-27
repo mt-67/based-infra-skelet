@@ -1,4 +1,4 @@
-# Skeleton EKS Platform
+# KatanaPay EKS Platform
 
 ## Overview
 
