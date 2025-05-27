@@ -14,19 +14,6 @@ The cluster is deployed in **private subnets** across multiple AZs. The control 
 
 ---
 
-## 3 First Hardening Steps (and Why)
-
-1. **Disable Public Access to Control Plane**  
-   Prevents attackers from reaching the Kubernetes API over the internet.
-
-2. **Enable Network Policies (via CNI)**  
-   Enforces traffic rules between pods, critical for environments requiring PCI-DSS or strict microsegmentation.
-
-3. **Use IRSA for Pod Identity**  
-   Replaces static AWS credentials with IAM Roles for Service Accounts, improving auditability and security.
-
----
-
 ## Next Sprint
 
 - **Deploy Vault with KMS-based auto-unseal**  
