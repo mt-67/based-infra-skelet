@@ -4,7 +4,7 @@
 
 This infrastructure provides an isolated, production-grade foundation for running workloads securely on AWS using a private EKS cluster. The design isolates workloads at the networking level, keeps the control plane inaccessible from the internet, and prepares the system for further hardening and observability.
 
-## Infrastructure Descriptions?
+## Infrastructure Descriptions
 
 The infrastructure skeleton was created in terraform with vpc in 3 zones private and public, the cluster is deployed in **private subnets** The endpoint of the control plane is **private**.  The NAT Gateway is on the same public subnet as the Internet Gateway and all 3 private subnets have access to it. The public modules used are terraform-aws-modules/vpc and terraform-aws-modules/eks from Terraform Registry.No working nodes yet; this is a basic phase (stub configuration).
 
