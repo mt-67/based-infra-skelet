@@ -33,3 +33,5 @@ The architecture.md file contains the configuration of the entire infrastructure
 
 - **Make a Pipeline**  
   To make a pipelines for automatic assembly of Docker containers.
+
+- Allocate a separate storage area
