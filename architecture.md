@@ -6,7 +6,7 @@ flowchart TD
     VPC["VPC: katana"] --> PUB1["Public Subnet A"] & PUB2["Public Subnet B"] & PUB3["Public Subnet C"] & PRIV1["Private Subnet A"] & PRIV2["Private Subnet B"] & PRIV3["Private Subnet C"]
     PUB1 --> NAT["NAT Gateway"]
     NAT --> IGW["Internet Gateway"]
-    PRIV1 --> NAT & EKS["EKS Cluster skeleton 
+    PRIV1 --> NAT & EKS["EKS Cluster katana 
     (Private API Endpoint)"]
     PRIV2 --> EKS & NAT
     PRIV3 --> EKS & NAT
