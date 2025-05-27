@@ -31,5 +31,5 @@ The architecture.md file contains the configuration of the entire infrastructure
 - **Enable Observability Stack**  
   Deploy Grafana with Loki for log aggregation, and Prometheus (IAM-authenticated) for metrics collection.
 
-- **Make a Pipeline**
+- **Make a Pipeline**  
   To make a pipelines for automatic assembly of Docker containers.
