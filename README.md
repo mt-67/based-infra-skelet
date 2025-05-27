@@ -25,8 +25,11 @@ The architecture.md file contains the configuration of the entire infrastructure
 - **Deploy Vault with KMS-based auto-unseal**  
   Enables secret management and dynamic credentials with secure key storage.
 
-- **Adopt GitOps with ArgoCD**  
+- **Adopt GitOps**  
   Declarative application lifecycle management using ApplicationSets and Git as the source of truth.
 
 - **Enable Observability Stack**  
   Deploy Grafana with Loki for log aggregation, and Prometheus (IAM-authenticated) for metrics collection.
+
+- **Make a Pipeline**
+  To make a pipelines for automatic assembly of Docker containers
