@@ -16,12 +16,6 @@ variable "vpc_cidr" {
   default     = "10.0.0.0/16"
 }
 
-variable "azs" {
-  description = "list AZ"
-  type        = list(string)
-  default     = ["eu-west-3a", "eu-west-3b", "eu-west-3c"]
-}
-
 variable "public_subnets" {
   description = "public subnet CIDR"
   type        = list(string)
@@ -32,6 +26,12 @@ variable "private_subnets" {
   description = "private subnet CIDR"
   type        = list(string)
   default     = ["10.0.10.0/24", "10.0.11.0/24", "10.0.12.0/24"]
+}
+
+variable "azs" {
+  description = "list AZ"
+  type        = list(string)
+  default     = ["eu-west-3a", "eu-west-3b", "eu-west-3c"]
 }
 
 variable "enable_nat" {
