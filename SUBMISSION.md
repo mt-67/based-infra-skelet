@@ -4,7 +4,8 @@
 
 # What I’d add if I had another day
 
-- IAM Roles и Policy (is important for the security of the resource from users) 
+- IAM Roles и Policy (is important for the security of the resource from users)
+- Disable Public Access to Control Plane (prevents attackers from reaching the Kubernetes API over the internet)
 - Network policies Zero-Trust (is important for the security of the infrastructure)
 - IRSA integration for least-privilege access from pods (so that the pods can access the api were under control and with the roles they were given)
 - CloudWatch logging and metrics 
