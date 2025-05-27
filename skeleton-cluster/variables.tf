@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "vpc_name" {
   description = "VPC name"
   type        = string
-  default     = "katana-foundation"
+  default     = "Skeleton"
 }
 
 variable "vpc_cidr" {
