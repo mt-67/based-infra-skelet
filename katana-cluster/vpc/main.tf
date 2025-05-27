@@ -14,6 +14,6 @@ module "vpc" {
   one_nat_gateway_per_az = false
 
   tags = {
-    Project = "skeleton"
+    Project = "katana"
   }
 }

@@ -26,4 +26,3 @@ flowchart TD
     style EKS stroke-width:4px,stroke-dasharray: 0
     style PODS stroke-width:2px,stroke-dasharray: 0
     linkStyle 13 stroke:#000000,fill:none
-    

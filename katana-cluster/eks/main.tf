@@ -2,7 +2,7 @@ module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "20.36.0"
  
-  cluster_name    = "skeleton"
+  cluster_name    = "katana"
   cluster_version = "1.32"
 
   subnet_ids = module.vpc.private_subnets
@@ -14,6 +14,6 @@ module "eks" {
   eks_managed_node_groups = {} 
 
   tags = {
-    Environment = "skeleton-env"
+    Environment = "katana-env"
   }
 }
