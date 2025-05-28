@@ -16,7 +16,7 @@ The architecture.md file contains the configuration of the entire infrastructure
 
 [diagram](https://www.mermaidchart.com/raw/77c7eb92-865c-4935-8173-cbf689a35d8f?theme=light&version=v0.1&format=svg) – link to the graphical infrastructure diagram
 
-![telegram-cloud-photo-size-2-5307721993602333658-y](https://github.com/user-attachments/assets/50f03fea-dd88-424b-a225-2bafa7fb4409)
+![telegram-cloud-photo-size-2-5312282450006765450-y](https://github.com/user-attachments/assets/f4b91af6-5e26-4974-9f62-b7a7ca79123a)
 
 ---
 
