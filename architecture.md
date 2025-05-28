@@ -6,7 +6,7 @@ flowchart TD
     n33["NAT Gateway"] --> n38["Internet Gateway <br>"]
     n40["NAT Gateway"] --> n38
     n42["NAT Gateway"] --> n38
-    EKS["EKS Cluster<br><br><br>"]
+    '''EKS["EKS Cluster<br><br><br>"]'''
     PODS["Node"]
     n22["EKS Cluster<br><br><br><br>"]
     n23["Node"]
