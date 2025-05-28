@@ -3,26 +3,51 @@ config:
   layout: fixed
 ---
 flowchart TD
-    VPC["VPC: katana"] --> PUB1["Public Subnet A"] & PUB2["Public Subnet B"] & PUB3["Public Subnet C"] & PRIV1["Private Subnet A"] & PRIV2["Private Subnet B"] & PRIV3["Private Subnet C"]
-    PUB1 --> NAT["NAT Gateway"]
-    NAT --> IGW["Internet Gateway"]
-    PRIV1 --> NAT & EKS["EKS Cluster katana 
-    (Private API Endpoint)"]
-    PRIV2 --> EKS & NAT
-    PRIV3 --> EKS & NAT
-    EKS --> PODS["Worker Nodes 
-  0 count"]
-    PODS --> IRSA["IRSA 
-  (TODO)"]
-    style VPC stroke-width:4px,stroke-dasharray: 0
-    style PUB1 stroke:#2962FF
-    style PUB2 stroke:#2962FF
-    style PUB3 stroke:#2962FF
-    style PRIV1 stroke:#D50000
-    style PRIV2 stroke:#D50000
-    style PRIV3 stroke:#D50000
-    style IGW stroke-width:1px,stroke-dasharray: 0
-    style IRSA stroke-width:1px,stroke-dasharray: 0
-    style EKS stroke-width:4px,stroke-dasharray: 0
-    style PODS stroke-width:2px,stroke-dasharray: 0
-    linkStyle 13 stroke:#000000,fill:none
+    n33["NAT Gateway"] --> n38["Internet Gateway <br>"]
+    n40["NAT Gateway"] --> n38
+    n42["NAT Gateway"] --> n38
+    EKS["EKS Cluster<br><br><br>"]
+    PODS["Node"]
+    n22["EKS Cluster<br><br><br><br>"]
+    n23["Node"]
+    n14["EKS Cluster<br><br><br><br>"]
+    n20["Node"]
+    n2["Public Subnet C"]
+    n3["Public Subnet B"]
+    n10["AZ (B) <br>"]
+    n12["Private Subnet B<br><br><br><br><br> <br>"]
+    n11["AZ (C)"]
+    n18["Private Subnet C<br><br><br><br><br> <br>"]
+    n25["Public Subnet C<br><br><br><br><br> <br>"]
+    n16["Public Subnet B<br><br><br><br><br> <br>"]
+    n9["AZ (A) <br>"]
+    n19["EKS Cluster<br><br><br><br>"]
+    n21["Private Subnet A<br><br><br><br><br> <br>"]
+    n28["Node"]
+    n29["EKS Cluster<br><br><br><br>"]
+    n31["Node"]
+    n32["Public Subnet A<br><br><br><br><br> <br>"]
+    n35["EKS Cluster<br><br><br><br>"]
+    n36["Node"]
+    n37["VPC katana <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"]
+    n41["NAT Gateway"]
+    n43["NAT Gateway"]
+    n44["NAT Gateway"]
+    n45["Region <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"]
+    n33@{ shape: rect}
+    n38@{ shape: rect}
+    n40@{ shape: rect}
+    n42@{ shape: rect}
+    n28@{ shape: rect}
+    n29@{ shape: rect}
+    n31@{ shape: rect}
+    n32@{ shape: rect}
+    n35@{ shape: rect}
+    n36@{ shape: rect}
+    n37@{ shape: rect}
+    n41@{ shape: rect}
+    n43@{ shape: rect}
+    n44@{ shape: rect}
+    n45@{ shape: rect}
+    style n37 fill:transparent
+    style n45 fill:transparent
