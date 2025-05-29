@@ -1,12 +1,12 @@
 ![изображение](https://github.com/user-attachments/assets/ac2c0f2d-7a4c-4836-8190-a72e72e3f6c1)
 
+# Architecture Overview
+
+## Diagram
 ---
 config:
   layout: fixed
 ---
-# Architecture Overview
-
-## Diagram
 flowchart TB
     #Region
       subgraph AWS Region [Region]
