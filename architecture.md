@@ -6,7 +6,7 @@ config:
 ---
 # Architecture Overview
 
-## Diagram
+# Diagram
 flowchart TB
     #Region
       subgraph AWS Region [Region]
