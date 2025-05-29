@@ -1,4 +1,5 @@
-![изображение](https://github.com/user-attachments/assets/ac2c0f2d-7a4c-4836-8190-a72e72e3f6c1)
+![изображение](https://github.com/user-attachments/assets/d988ed94-fea6-4150-b6ab-04d5e5755873)
+
 
 # Architecture Overview
 
