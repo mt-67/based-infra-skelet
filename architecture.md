@@ -36,7 +36,7 @@ graph TD
                     NODES_A[Worker Nodes]
             end       
 
-
+---
 ## Config in Mermaid
 
 ---
