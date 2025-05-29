@@ -10,7 +10,8 @@ The infrastructure was created in terraform with vpc in 3 zones private and publ
 
 Terraform validate for this infrastructure was successful (screenshot attached)
 
-![telegram-cloud-photo-size-2-5307721993602333597-y](https://github.com/user-attachments/assets/3a536d70-bf44-4872-ae87-4e71b9666f46)
+![telegram-cloud-photo-size-2-5316800257385953736-y](https://github.com/user-attachments/assets/e34f9887-69f0-4ee8-a65f-4143d146a392)
+
 
 The architecture.md file contains the configuration of the entire infrastructure graphical layout (attached screenshot of the infrastructure graphical layout and a link to view it without having to enter the credentials)
 
