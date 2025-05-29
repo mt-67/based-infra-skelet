@@ -19,9 +19,28 @@ The architecture.md file contains the configuration of the entire infrastructure
 ![telegram-cloud-photo-size-2-5312282450006765450-y](https://github.com/user-attachments/assets/f4b91af6-5e26-4974-9f62-b7a7ca79123a)
 
 ---
+## PCI DSS Zones Mapping
 
+- **Control Plane**
+  managed by AWS, out of scope
+  
+- **Data Plane (nodes, pods)**
+  in Private Subnets, restricted via SG
+  
+- **Audit Trail**
+  via VPC Flow Logs, IRSA logs
+
+- **Threat-model**
+  NAT only for egress, no inbound to nodes, deny-all SG 
+---
 ## Next Sprint
 
+- **TODO**
+  network policy & WAF in later hardening
+  
+- **Secrets**
+  planned via Vault
+  
 - **Deploy Vault with KMS-based auto-unseal**  
   Enables secret management and dynamic credentials with secure key storage.
 
