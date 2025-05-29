@@ -11,7 +11,14 @@ module "eks" {
   endpoint_private_access = true
   endpoint_public_access  = false
 
-  eks_managed_node_groups = {} 
+  eks_managed_node_groups = {
+    default = {
+      instance_types   = ["t3.medium"] # allows you to temporarily increase CPU performance
+      min_size         = 0
+      max_size         = 1
+      desired_size     = 0 # TODO: scale up when first microservice is deployed
+    }
+  }
 
   tags = {
     Environment = "katana-env"
