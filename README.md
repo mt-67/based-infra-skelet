@@ -2,11 +2,11 @@
 [diagram](https://www.mermaidchart.com/raw/e95c1b9e-3771-4253-bd46-b403fba68c0b?theme=light&version=v0.1&format=svg) – link to the graphical infrastructure diagram
 ## Overview
 
-This infrastructure provides an isolated, production-grade foundation for running workloads securely on AWS using a private EKS cluster. I've done IAM, IRSA and Security Groups. The design isolates workloads at the networking level, keeps the control plane inaccessible from the internet, and prepares the system for further hardening and observability.
+This infrastructure provides an isolated, production-grade foundation for running workloads securely on AWS using a private EKS cluster. The design isolates workloads at the networking level, keeps the control plane inaccessible from the internet, and prepares the system for further hardening and observability.
 
 ## Infrastructure Descriptions
 
-The infrastructure was created in terraform with vpc in 3 zones private and public, the cluster is deployed in private subnets. The endpoint of the control plane is private. The NAT Gateway is on the same public subnet as the Internet Gateway and all 3 private subnets have access to it. The public modules used are terraform-aws-modules/vpc and terraform-aws-modules/eks from Terraform Registry. I've created 0 nodes, because scale up when first microservice is deployed (stub configuration). irsa.tf is located in modules/eks
+The infrastructure was created in terraform with vpc in 3 zones private and public, the cluster is deployed in private subnets. The endpoint of the control plane is private. The NAT Gateway is on the same public subnet as the Internet Gateway and all 3 private subnets have access to it. I've done IAM, IRSA and Security Groups. The public modules used are terraform-aws-modules/vpc and terraform-aws-modules/eks from Terraform Registry. I've created 0 nodes, because scale up when first microservice is deployed (stub configuration). irsa.tf is located in modules/eks
 
 Terraform validate for this infrastructure was successful (screenshot attached)
 
