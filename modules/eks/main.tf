@@ -17,5 +17,7 @@ module "eks" {
       min_size         = 0
       max_size         = 8
       desired_size     = 0 # TODO: scale up when first microservice is deployed
-    }
+  tags = {
+    Environment = "katana-env"
   }
+}
