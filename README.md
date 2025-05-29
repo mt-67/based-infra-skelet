@@ -2,7 +2,7 @@
 [diagram](https://www.mermaidchart.com/raw/e95c1b9e-3771-4253-bd46-b403fba68c0b?theme=light&version=v0.1&format=svg) – link to the graphical infrastructure diagram
 ## Overview
 
-This infrastructure provides an isolated, production-grade foundation for running workloads securely on AWS using a private EKS cluster. The design isolates workloads at the networking level, keeps the control plane inaccessible from the internet, and prepares the system for further hardening and observability.
+This infrastructure provides an isolated, production-grade foundation for running workloads securely on AWS using a private EKS cluster. I've done IAM, IRSA and Security Groups. The design isolates workloads at the networking level, keeps the control plane inaccessible from the internet, and prepares the system for further hardening and observability.
 
 ## Infrastructure Descriptions
 
