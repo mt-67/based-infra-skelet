@@ -23,7 +23,7 @@ The architecture.md file contains the configuration of the entire infrastructure
 ---
 ## PCI DSS Zones Mapping
 
-- **Control Plane**
+- **Control Plane(etcd, kube scheduler, kube-apiserver, contorller manager)**  
   managed by AWS, out of scope
   
 - **Data Plane (nodes, pods)**
