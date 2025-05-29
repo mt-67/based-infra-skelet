@@ -33,10 +33,9 @@ The architecture.md file contains the configuration of the entire infrastructure
 - **Threat-model**
   NAT only for egress, no inbound to nodes, deny-all SG 
 ---
-## Next Sprint
+## TODO
 
-- **TODO**
-  network policy & WAF in later hardening
+  Network policy & WAF in later hardening
   
 - **Secrets**
   planned via Vault
