@@ -35,7 +35,7 @@ module "eks" {
     default = {
       instance_types   = ["t3.medium"] # allows you to temporarily increase CPU performance
       min_size         = 0
-      max_size         = 1
+      max_size         = 8
       desired_size     = 0 # TODO: scale up when first microservice is deployed
     }
   }
