@@ -37,7 +37,7 @@ The architecture.md file contains the configuration of the entire infrastructure
 
   Network policy & WAF in later hardening
   
-- **Secrets**
+- **Secrets**  
   planned via Vault
   
 - **Deploy Vault with KMS-based auto-unseal**  
