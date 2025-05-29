@@ -35,7 +35,9 @@ The architecture.md file contains the configuration of the entire infrastructure
 ---
 ## TODO
 
-  Network policy & WAF in later hardening
+- Network policy & WAF in later hardening
+
+- Configure S3 backend
   
 - **Secrets**  
   planned via Vault
