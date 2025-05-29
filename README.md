@@ -6,7 +6,7 @@ This infrastructure provides an isolated, production-grade foundation for runnin
 
 ## Infrastructure Descriptions
 
-The infrastructure skeleton was created in terraform with vpc in 3 zones private and public, the cluster is deployed in **private subnets** The endpoint of the control plane is **private**.  The NAT Gateway is on the same public subnet as the Internet Gateway and all 3 private subnets have access to it. The public modules used are terraform-aws-modules/vpc and terraform-aws-modules/eks from Terraform Registry.No working nodes yet; this is a basic phase (stub configuration).
+The infrastructure was created in terraform with vpc in 3 zones private and public, the cluster is deployed in private subnets. The endpoint of the control plane is private. The NAT Gateway is on the same public subnet as the Internet Gateway and all 3 private subnets have access to it. The public modules used are terraform-aws-modules/vpc and terraform-aws-modules/eks from Terraform Registry. I've created 0 nodes, because scale up when first microservice is deployed (stub configuration).
 
 Terraform validate for this infrastructure was successful (screenshot attached)
 
