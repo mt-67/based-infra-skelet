@@ -26,13 +26,13 @@ The architecture.md file contains the configuration of the entire infrastructure
 - **Control Plane(etcd, kube scheduler, kube-apiserver, contorller manager)**  
   managed by AWS, out of scope
   
-- **Data Plane (nodes, pods)**
+- **Data Plane (nodes, pods)**  
   in Private Subnets, restricted via SG
   
-- **Audit Trail**
+- **Audit Trail**  
   via VPC Flow Logs, IRSA logs
 
-- **Threat-model**
+- **Threat-model**  
   NAT only for egress, no inbound to nodes, deny-all SG 
 ---
 ## TODO
