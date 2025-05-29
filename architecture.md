@@ -39,10 +39,10 @@ graph TD
 ---
 ## Config in Mermaid
 
----
+
 config:
   layout: fixed
----
+
 flowchart TD
     n33["NAT Gateway"] --> n38["Internet Gateway <br>"]
     n40["NAT Gateway"] --> n38
