@@ -6,7 +6,7 @@ This infrastructure provides an isolated, production-grade foundation for runnin
 
 ## Infrastructure Descriptions
 
-The infrastructure was created in terraform with vpc in 3 zones private and public, the cluster is deployed in private subnets. The endpoint of the control plane is private. The NAT Gateway is on the same public subnet as the Internet Gateway and all 3 private subnets have access to it. I've done IAM with IRSA, and Security Groups. The public modules used are terraform-aws-modules/vpc and terraform-aws-modules/eks from Terraform Registry. I've created 0 nodes/pods(TODO), because scale up when first microservice is deployed (stub configuration). irsa.tf is located in modules/eks
+The infrastructure was created in terraform with vpc in 3 zones private and public, the cluster is deployed in private subnets. The endpoint of the control plane is private. The NAT Gateway is on the same public subnet as the Internet Gateway and all 3 private subnets have access to it. I create IAM with IRSA, aws_cloudwatch_log_group(vpc_logs) and Security Groups. The public modules used are terraform-aws-modules/vpc and terraform-aws-modules/eks from Terraform Registry. I've created 0 nodes/pods(TODO), because scale up when first microservice is deployed (stub configuration). irsa.tf is located in modules/eks
 
 Terraform validate for this infrastructure was successful (screenshot attached)
 
