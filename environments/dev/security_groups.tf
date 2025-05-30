@@ -9,5 +9,5 @@ resource "aws_security_group" "eks_node_sg" {
   tags = {
     Name = "eks-node-ZT"
   }
-# TODO: expand only with least-privilege rules
+# (TODO) expand only with least-privilege rules
 }
