@@ -82,5 +82,22 @@ resource "kubernetes_service_account" "logs_writer" {
     }
   }
 
+
+resource "aws_iam_role_policy" "s3_policy" {
+  name = "check_s3_object_policy"
+  role = aws_iam_role.s3_object.id
+
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [{
+      Effect = "Allow",
+      Action = [
+        "s3:GetObject"
+      ],
+      Resource = "bucket1"
+    }]
+  })
+}
+
   # TODO: Attach this SA to a pod via spec.serviceAccountName: logs-writer
 }
